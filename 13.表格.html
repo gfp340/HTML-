@@ -15,18 +15,30 @@
 </head>
 <body>
   <html>
-    <head><title>換行</title></head>
+    <head><title>表格</title></head>
     <body>
-        <p>雲淡風輕近午天</p>
-        <p>傍花隨柳過前川</p>
-        <p>時人不識余心樂</p>
-        <p>將謂偷閒學少年</p>
 
-        皇帝即阼<br>
-        物無違拒<br>
-        曰暘而暘<br>
-        曰雨而雨<br>
-        <!--<p>是換行加空一行，br則是單純換行-->
+        <table border=1>
+            <tr><td>1</td><td>2</td><td>3</td></tr>
+            <tr><td>4</td><td>5</td><td>6</td></tr>
+        </table>
+
+      <table border=1>
+            <tr><td>1</td><td colspan=2>2 3</td></tr>
+            <tr><td>4</td><td>5</td><td>6</td></tr>
+        </table>
+   
+        <table border=1>
+            <tr><td rowspan=2>1 4</td><td>2</td><td>3</td></tr>
+            <tr>                      <td>5</td><td>6</td></tr>
+        </table>
+    
+         <table border=1>
+            <tr><td>1</td><td colspan=2 rowspan=2>2 3 5 6</td></tr>
+            <tr><td>4</td>                                    </tr>
+            <tr><td>7</td><td>8</td><td>9</td></tr>
+        </table>
+        <!--table是創立表格，在td裡可以設定，colspan是水平，rowspan是垂直-->
     </body>
 </html>
 
