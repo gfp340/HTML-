@@ -15,18 +15,18 @@
 </head>
 <body>
   <html>
-    <head><title>換行</title></head>
+    <head>
+        <title>字元間距</title>
+        <style>
+            #a {letter-spacing: 1.8em}
+            #b {letter-spacing: -7px}
+        </style>
+    </head>
     <body>
-        <p>雲淡風輕近午天</p>
-        <p>傍花隨柳過前川</p>
-        <p>時人不識余心樂</p>
-        <p>將謂偷閒學少年</p>
-
-        皇帝即阼<br>
-        物無違拒<br>
-        曰暘而暘<br>
-        曰雨而雨<br>
-        <!--<p>是換行加空一行，br則是單純換行-->
+        <h1>這是正常的文字間距</h1>
+        <h1 id="a">這是較大的文字間距</h1>
+        <h1 id="b">這是較小的文字間距</h1>
+    <!設定距離為ab，底下再將ab引入即可更改字間距>
     </body>
 </html>
 
