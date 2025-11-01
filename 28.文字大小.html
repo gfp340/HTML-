@@ -15,19 +15,23 @@
 </head>
 <body>
   <html>
-    <head><title>換行</title></head>
-    <body>
-        <p>雲淡風輕近午天</p>
-        <p>傍花隨柳過前川</p>
-        <p>時人不識余心樂</p>
-        <p>將謂偷閒學少年</p>
-
-        皇帝即阼<br>
-        物無違拒<br>
-        曰暘而暘<br>
-        曰雨而雨<br>
-        <!--<p>是換行加空一行，br則是單純換行-->
-    </body>
+  <head><title>文字顏色</title></head>
+      <style>
+        .a{ font-size:large; }
+        .b{ font-size:small; }
+        .c{ font-size:25px; }
+        .d{ font-size:2em;
+        text-decoration: line-through }
+      </style>
+  </head>
+  <body>
+    <p>原始大小</p>
+    <p class='a'>large</p>
+    <p class='b'>small</p>
+    <p class='c'>絕對單位25px</p>
+    <p class='d'>相對單位2em</p>
+    <!--a是靠單字大或小，c是靠單位類似word，d跟c很像但1em=16px-->
+  </body>
 </html>
 
   <script>
